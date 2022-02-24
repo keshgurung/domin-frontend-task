@@ -1,0 +1,45 @@
+/* base styles , things that dont change depending on the size as buttons, input field*/
+.login {
+  margin-top: 9em;
+}
+
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  background-color: #6b6b6b;
+  color: white;
+  height: auto;
+  width: auto;
+}
+/* fonts */
+h1 {
+  text-align: center;
+  font-size: 2.8em;
+  font-family: 'Karla', sans-serif;
+  margin-top: -0.1px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: #6b6b6b;
+  font-weight: 100;
+  margin-top: -30px;
+}
+
+/* mobile styles */
+
+/* small tablets styles */
+@media screen and (min-width: 620px) {
+}
+/* large tablets and laptops */
+@media screen and (min-width: 960px) {
+}
+/* desktops styles */
+@media screen and (min-width: 1200px) {
+}
