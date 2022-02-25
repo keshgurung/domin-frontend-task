@@ -1,6 +1,11 @@
 /* base styles , things that dont change depending on the size as buttons, input field*/
+* {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
 .login {
-  margin-top: 9em;
+  margin-top: 7em;
 }
 
 .logo {
@@ -10,11 +15,33 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.click-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7em;
+  margin-left: 3%;
+  margin-right: 3%;
+}
 button {
   background-color: #6b6b6b;
   color: white;
-  height: auto;
+  height: 50px;
   width: auto;
+  border-radius: 10px;
+  border: none;
+}
+button:first-of-type {
+  margin-bottom: 15px;
+}
+
+.click-button button:hover,
+.click-button button:active {
+  background-color: #20677c;
+}
+
+button:click {
+  background-color: #20677c;
 }
 /* fonts */
 h1 {
@@ -30,6 +57,23 @@ h2 {
   color: #6b6b6b;
   font-weight: 100;
   margin-top: -30px;
+}
+
+.para {
+  margin-top: 7em;
+  text-align: center;
+}
+
+p:first-of-type {
+  color: #6b6b6b;
+  font-weight: 600;
+  font-size: 1em;
+}
+p:last-of-type {
+  color: #6b6b6b;
+  font-family: arial;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* mobile styles */
