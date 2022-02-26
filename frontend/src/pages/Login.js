@@ -1,6 +1,8 @@
 import logo from '../assets/domin_logo.png'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const navigate = useNavigate()
   return (
     <div className='login'>
       <img className='logo' src={logo} alt='logo' />
@@ -15,7 +17,13 @@ const Login = () => {
         </p>
       </div>
       <div className='click-button'>
-        <button>Get Started</button>
+        <button
+          onClick={() => {
+            navigate('home')
+          }}
+        >
+          Get Started
+        </button>
         <button>Log In</button>
       </div>
     </div>
