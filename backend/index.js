@@ -1,34 +1,37 @@
 import express from 'express'
+import cors from 'cors'
 
 const app = express()
 
 const port = 4000
+
+app.use(cors({ origin: true }))
 
 app.get('/', (req, res) => {
   res.json([
     {
       id: 1,
       uid: 'SN0000f43',
-      image: 'https://imgur.com/yaO9u1Y',
+      image: 'https://i.imgur.com/EGHGo3i.png',
       type: 'S4 Pro',
       location: 'Site1, Cheddar, UK',
-      Status: 'Active',
+      status: 'Active',
     },
     {
       id: 2,
       uid: 'SN0000g96',
-      image: 'https://imgur.com/jlIk0Kk',
+      image: 'https://i.imgur.com/5w7jfqf.png',
       type: 'S6 Pro',
       location: 'Site1, Cheddar, UK',
-      Status: 'Error',
+      status: 'Error',
     },
     {
       id: 3,
       uid: 'SN0000h56',
-      image: 'https://imgur.com/zMtRZjU',
+      image: 'https://i.imgur.com/YgIG0cc.png',
       type: 'Fast',
       location: 'Vehicle1, Cheddar, UK',
-      Status: 'Active',
+      status: 'Active',
     },
   ])
 })
@@ -40,7 +43,7 @@ app.get('/1', (req, res) => {
       image: 'https://imgur.com/yaO9u1Y',
       type: 'S4 Pro',
       location: 'Site1, Cheddar, UK',
-      Status: 'Active',
+      status: 'Active',
     },
   ])
 })
@@ -52,7 +55,7 @@ app.get('/2', (req, res) => {
       image: 'https://imgur.com/jlIk0Kk',
       type: 'S6 Pro',
       location: 'Site1, Cheddar, UK',
-      Status: 'Error',
+      status: 'Error',
     },
   ])
 })
@@ -64,7 +67,7 @@ app.get('/3', (req, res) => {
       image: 'https://imgur.com/zMtRZjU',
       type: 'Fast',
       location: 'Vehicle1, Cheddar, UK',
-      Status: 'Active',
+      status: 'Active',
     },
   ])
 })

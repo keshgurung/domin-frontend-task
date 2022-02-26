@@ -139,21 +139,92 @@ input.search-box {
 }
 .dropbtn {
   color: rgb(37, 36, 36);
-  width: 140px;
+  width: 120px;
   height: 25px;
   margin-left: 10px;
   background-color: #00aec7;
-  text-indent: -2em;
+  text-indent: -1em;
 }
 
 .span1-loc {
   position: relative;
-  right: -30px;
+  right: -12px;
 }
 .span-loc {
   position: relative;
-  right: -40px;
+  right: -25px;
 }
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 2.5px solid #6b6b6b;
+  height: 3em;
+  position: fixed;
+  bottom: 0;
+  margin-left: -5px;
+  background-color: white;
+}
+
+.logo-menu {
+  height: 2em;
+  width: 2.5em;
+  margin-top: 5px;
+}
+
+.logo-menu:hover,
+.logo-menu:active {
+  background-color: #20677c;
+  opacity: 0.5;
+}
+
+.logo-menu:click {
+  background-color: #20677c;
+  opacity: 0.5;
+}
+li {
+  list-style: none;
+}
+
+.product-card {
+  display: flex;
+  width: 100%;
+  margin-left: -2em;
+  height: 9.5em;
+  margin-bottom: 0.9em;
+  box-shadow: 8px 0 8px rgb(187, 185, 185);
+  /* border-top: 0.5px solid grey;
+  border-bottom: 0.5px solid grey;
+  border-right: 2px solid grey; */
+}
+.image-container {
+  width: 150px;
+}
+.product-card img {
+  height: 110px;
+  width: 130px;
+  margin-top: 0.5em;
+}
+
+.product-card .info p {
+  text-align: left;
+  margin-bottom: -8px;
+  font-weight: normal;
+  color: rgb(117, 115, 115);
+}
+.info p span {
+  color: #00aec7;
+  margin-right: 0.3em;
+}
+.info p:nth-of-type(3) span::after {
+  content: '\a';
+  white-space: pre;
+}
+.info p:last-of-type {
+  margin-left: -0.1em;
+}
+
 /* small tablets styles */
 @media screen and (min-width: 620px) {
 }

@@ -1,7 +1,16 @@
 import logo from '../assets/domin_logo.png'
 import { AiOutlinePlusCircle, AiOutlineSearch } from 'react-icons/ai'
+import { useState, useEffect } from 'react'
+import { getData } from '../helper/api'
+import ProductCard from '../components/ProductCard'
 
 const Home = () => {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    getData().then(setProducts)
+  }, [])
+  console.log(products)
   return (
     <div className='main'>
       <div className='top'>
@@ -30,6 +39,16 @@ const Home = () => {
           Location <span className='span-loc'>&#x25BC;</span>
         </button>
       </div>
+
+      <section className='product'>
+        <ul>
+          {products.map((product) => (
+            <li key={product.id}>
+              <ProductCard {...product} />
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   )
 }
