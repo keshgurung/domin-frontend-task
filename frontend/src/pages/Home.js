@@ -10,7 +10,6 @@ const Home = () => {
   useEffect(() => {
     getData().then(setProducts)
   }, [])
-  console.log(products)
   return (
     <div className='main'>
       <div className='top'>
