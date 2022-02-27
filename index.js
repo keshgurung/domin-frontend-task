@@ -10,12 +10,13 @@ app.use(cors({ origin: true }))
 
 const port = process.env.PORT || 4000
 
+const __dirname = path.resolve()
 
-app.use(express.static(path.resolve(__dirname, "./client/build")));
+app.use(express.static(`${__dirname}/frontend/build`))
 // Step 2:
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
-});
+app.get('*', function (request, response) {
+  response.sendFile(`${__dirname}/frontend/build/index.html`)
+})
 
 app.get('/', (req, res) => {
   res.json([
@@ -58,7 +59,6 @@ app.get('/1', (req, res) => {
     },
   ])
 })
-
 
 app.listen(port, () => {
   console.log(`app running successfully on port ${port}`)
