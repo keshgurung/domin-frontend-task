@@ -291,7 +291,7 @@ h3 {
   flex-direction: column;
 }
 .single-electronics .title {
-  background-color: rgb(240, 233, 233);
+  background-color: rgb(209, 207, 207);
   width: 100%;
   height: 30px;
   margin-top: 2em;
@@ -330,7 +330,7 @@ h3 {
 }
 
 .single-char .title {
-  background-color: rgb(240, 233, 233);
+  background-color: rgb(209, 207, 207);
   width: 100%;
   height: 30px;
   margin-top: -0.4em;
@@ -354,6 +354,36 @@ h3 {
 .char-info p:last-of-type {
   margin-left: -0.1em;
 }
+
+.single-chart .title {
+  background-color: rgb(209, 207, 207);
+  width: 100%;
+  height: 30px;
+  margin-top: -0.4em;
+}
+.single-chart .title p {
+  position: relative;
+  top: 0.4em;
+  left: -1.2em;
+  font-weight: normal;
+}
+.single-chart .time {
+  display: flex;
+  justify-content: space-around;
+}
+.single-chart button {
+  border: 0;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  background-color: #a3e4ee;
+  color: rgb(134, 129, 129);
+  font-size: 16px;
+}
+
 /* small tablets styles */
 @media screen and (min-width: 620px) {
 }

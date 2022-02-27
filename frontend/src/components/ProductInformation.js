@@ -1,8 +1,39 @@
 import { BsArrowLeftCircle } from 'react-icons/bs'
 import { useNavigate, Link } from 'react-router-dom'
+import { Chart as Chartjs } from 'chart.js/auto'
+import { Line } from 'react-chartjs-2'
+
+const data = {
+  labels: ['1 day', '1 week', '1 mo', '3 mo'],
+  datasets: [
+    {
+      label: 'Spool position',
+      data: [12, 19, 0, 5, 2, 3],
+      borderWidth: 1,
+    },
+    {
+      label: 'Temperature',
+      data: [4, 0, 15, 6, 11, 4],
+      borderWidth: 1,
+    },
+    {
+      label: 'Pressure',
+      data: [9, 13, 4, 0, 5, 13],
+      borderWidth: 1,
+    },
+  ],
+}
+const options = {
+  scales: {
+    y: {
+      beginAtZero: true,
+    },
+  },
+}
 
 const ProductInformation = ({ image, uid, type, location, status }) => {
   const navigate = useNavigate()
+
   const changeColor = status === 'Active' ? 'green' : 'red'
   return (
     <div className='singleproduct'>
@@ -87,6 +118,24 @@ const ProductInformation = ({ image, uid, type, location, status }) => {
           </p>
         </div>
       </section>
+
+      <div className='single-chart'>
+        <div className='title'>
+          <p>Charts</p>
+        </div>
+        <div className='line-chart'>
+          <div className='check-box'></div>
+          <div className='chart'>
+            <Line data={data} options={options} />
+          </div>
+          <div className='time'>
+            <button>1 day</button>
+            <button>1 week</button>
+            <button>1 mo</button>
+            <button>3 mo</button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
