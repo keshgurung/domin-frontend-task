@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import SingleProduct from './pages/SingleProduct'
 import Configure from './components/Configure'
 import Info from './components/Info'
+import InfoFull from './components/InfoFull'
 
 // import { UserData } from './helper/Data'
 // import { useState } from 'react'
@@ -28,9 +29,11 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/home/1' element={<SingleProduct />}>
             <Route path='' element={<Info />} />
-            <Route path='configure' element={<Configure />} />
+            {/* <Route path='configure' element={<Configure />} /> */}
             <Route path='report' element={<SingleProduct />} />
           </Route>
+          <Route path='home/1/configure' element={<Configure />} />
+          <Route path='home/1/info' element={<InfoFull />} />
         </Routes>
       </Router>
     </>

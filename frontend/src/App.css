@@ -385,13 +385,39 @@ h3 {
   color: rgb(134, 129, 129);
   font-size: 0.9em;
 }
+/* navigation top */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
-/* small tablets styles */
-@media screen and (min-width: 620px) {
+.nav p {
+  margin-top: 0.7em;
 }
-/* large tablets and laptops */
+.pro-info {
+  margin-top: 9em;
+}
+.configure-product p {
+  margin-top: 11em;
+}
+
+/* large tablets and laptops and desktops*/
+
 @media screen and (min-width: 960px) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-left: 25%;
+    height: 9.5em;
+    margin-bottom: 0.9em;
+    box-shadow: 8px 0 8px rgb(187, 185, 185);
+  }
 }
-/* desktops styles */
-@media screen and (min-width: 1200px) {
+.dropdown {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25%;
 }

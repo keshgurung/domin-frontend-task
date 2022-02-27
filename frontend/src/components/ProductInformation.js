@@ -1,5 +1,6 @@
 import { BsArrowLeftCircle } from 'react-icons/bs'
 import { useNavigate, Link, Outlet } from 'react-router-dom'
+
 import Footer from './Footer'
 
 const ProductInformation = ({ image, uid, type, location, status }) => {
@@ -46,7 +47,7 @@ const ProductInformation = ({ image, uid, type, location, status }) => {
         <div>
           <h3>
             <Link
-              to='/home/1'
+              to='/home/1/info'
               style={{ 'text-decoration': 'none', color: 'grey' }}
             >
               Info
