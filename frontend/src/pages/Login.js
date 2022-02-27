@@ -1,7 +1,10 @@
 import logo from '../assets/domin_logo.png'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const Login = () => {
+  const location = useLocation()
+  console.log(location.pathname)
   const navigate = useNavigate()
   return (
     <div className='login'>
@@ -26,6 +29,7 @@ const Login = () => {
         </button>
         <button>Log In</button>
       </div>
+      {location.pathname !== '/' && <Footer />}
     </div>
   )
 }

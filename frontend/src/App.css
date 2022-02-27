@@ -188,6 +188,9 @@ li {
 }
 
 /* all products  */
+.product {
+  margin-bottom: 3em;
+}
 .product-card {
   display: flex;
   width: 100%;
@@ -196,6 +199,7 @@ li {
   margin-bottom: 0.9em;
   box-shadow: 8px 0 8px rgb(187, 185, 185);
 }
+
 .image-container {
   width: 150px;
 }
@@ -283,7 +287,6 @@ h3 {
 .single-menu div:hover,
 .single-menu div:active {
   border-bottom: 2px solid #00aec7;
-  color: #00aec7;
 }
 
 .single-electronics {
@@ -371,17 +374,17 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
-.single-chart button {
+.single-chart .time button {
   border: 0;
   border-radius: 5px;
-  width: 80px;
+  width: 6em;
   height: 30px;
   margin-top: 10px;
-  margin-bottom: 3em;
-  margin-left: 2em;
+  margin-bottom: 5em;
+  margin-left: 1.6em;
   background-color: #a3e4ee;
   color: rgb(134, 129, 129);
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 /* small tablets styles */

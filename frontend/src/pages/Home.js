@@ -3,6 +3,7 @@ import { AiOutlinePlusCircle, AiOutlineSearch } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
 import { getData } from '../helper/api'
 import ProductCard from '../components/ProductCard'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [products, setProducts] = useState([])
@@ -48,6 +49,7 @@ const Home = () => {
           ))}
         </ul>
       </section>
+      <Footer />
     </div>
   )
 }
