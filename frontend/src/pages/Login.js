@@ -27,7 +27,13 @@ const Login = () => {
         >
           Get Started
         </button>
-        <button>Log In</button>
+        <button
+          onClick={() => {
+            navigate('home')
+          }}
+        >
+          Log In
+        </button>
       </div>
       {location.pathname !== '/' && <Footer />}
     </div>
