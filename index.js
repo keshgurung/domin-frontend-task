@@ -8,16 +8,6 @@ const app = express()
 
 app.use(cors({ origin: true }))
 
-const port = process.env.PORT || 4000
-
-const __dirname = path.resolve()
-
-app.use(express.static(`${__dirname}/frontend/build`))
-// Step 2:
-app.get('*', function (request, response) {
-  response.sendFile(`${__dirname}/frontend/build/index.html`)
-})
-
 app.get('/', (req, res) => {
   res.json([
     {
@@ -58,6 +48,16 @@ app.get('/1', (req, res) => {
       status: 'Active',
     },
   ])
+})
+
+const port = process.env.PORT || 4000
+
+const __dirname = path.resolve()
+
+app.use(express.static(`${__dirname}/frontend/build`))
+// Step 2:
+app.get('*', function (request, response) {
+  response.sendFile(`${__dirname}/frontend/build/index.html`)
 })
 
 app.listen(port, () => {
