@@ -40,33 +40,9 @@ app.get('/1', (req, res) => {
     {
       id: 1,
       uid: 'SN0000f43',
-      image: 'https://imgur.com/yaO9u1Y',
+      image: 'https://i.imgur.com/EGHGo3i.png',
       type: 'S4 Pro',
       location: 'Site1, Cheddar, UK',
-      status: 'Active',
-    },
-  ])
-})
-app.get('/2', (req, res) => {
-  res.json([
-    {
-      id: 2,
-      uid: 'SN0000g96',
-      image: 'https://imgur.com/jlIk0Kk',
-      type: 'S6 Pro',
-      location: 'Site1, Cheddar, UK',
-      status: 'Error',
-    },
-  ])
-})
-app.get('/3', (req, res) => {
-  res.json([
-    {
-      id: 3,
-      uid: 'SN0000h56',
-      image: 'https://imgur.com/zMtRZjU',
-      type: 'Fast',
-      location: 'Vehicle1, Cheddar, UK',
       status: 'Active',
     },
   ])
