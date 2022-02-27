@@ -1,15 +1,9 @@
-import { useState, useEffect } from 'react'
-import { getSingleData } from '../helper/api'
+import { useState } from 'react'
 import ProductInformation from '../components/ProductInformation'
+import { singleProductData } from '../helper/data'
 
 const SingleProduct = () => {
-  const [product, setProduct] = useState([])
-
-  useEffect(() => {
-    getSingleData().then(setProduct)
-  }, [])
-
-  console.log(product)
+  const [product, setProduct] = useState(singleProductData[0])
   return (
     <section>
       {product ? (

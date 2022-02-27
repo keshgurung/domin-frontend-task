@@ -1,16 +1,12 @@
 import logo from '../assets/domin_logo.png'
 import { AiOutlinePlusCircle, AiOutlineSearch } from 'react-icons/ai'
-import { useState, useEffect } from 'react'
-import { getData } from '../helper/api'
+import { useState } from 'react'
 import ProductCard from '../components/ProductCard'
 import Footer from '../components/Footer'
-
+import { productData } from '../helper/data'
 const Home = () => {
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState(productData)
 
-  useEffect(() => {
-    getData().then(setProducts)
-  }, [])
   return (
     <div className='main'>
       <div className='top'>
