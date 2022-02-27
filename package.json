@@ -5,12 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "cd frontend && npm run build",
-    "install-frontend": "cd frontend && npm install",
-    "heroku-postbuild": "npm run install-frontend && npm run build",
-    "server": "nodemon index.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\""
+    "build": "cd frontend && yarn && yarn build",
+    "dev": "npx nodemon",
+    "start": "node index.js",
+
     }, 
   "author": "",
   "license": "ISC",
