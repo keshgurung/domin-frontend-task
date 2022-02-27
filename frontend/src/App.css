@@ -1,4 +1,4 @@
-/* base styles , things that dont change depending on the size as buttons, input field*/
+/* base styles ,buttons, input field*/
 * {
   box-sizing: border-box;
   font-family: 'Karla', sans-serif;
@@ -43,6 +43,7 @@ button:first-of-type {
 button:click {
   background-color: #20677c;
 }
+
 /* fonts */
 h1 {
   text-align: center;
@@ -76,7 +77,8 @@ p:last-of-type {
   margin-right: 10%;
 }
 
-/* mobile styles */
+/* mobile responsive styles */
+
 .logo-main {
   display: block;
   width: 30px;
@@ -188,6 +190,7 @@ li {
 }
 
 /* all products  */
+
 .product {
   margin-bottom: 3em;
 }
@@ -238,6 +241,7 @@ li {
 }
 
 /* single product cart */
+
 .singleproduct {
   display: flex;
   flex-direction: column;
@@ -386,6 +390,7 @@ h3 {
   font-size: 0.9em;
 }
 /* navigation top */
+
 .nav {
   position: fixed;
   top: 0;
