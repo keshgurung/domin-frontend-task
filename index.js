@@ -6,8 +6,6 @@ dotenv.config()
 
 const app = express()
 
-app.use(cors({ origin: true }))
-
 const port = process.env.PORT || 4000
 
 const __dirname = path.resolve()

@@ -7,20 +7,7 @@ import Configure from './components/Configure'
 import Info from './components/Info'
 import InfoFull from './components/InfoFull'
 
-// import { UserData } from './helper/Data'
-// import { useState } from 'react'
-
 function App() {
-  // const pathname = '/'
-  // const [userData, setUserData] = useState({
-  //   labels: UserData.map((data) => data.year),
-  //   datasets: [
-  //     {
-  //       label: 'users gained',
-  //       data: UserData.map((data) => data.userGain),
-  //     },
-  //   ],
-  // })
   return (
     <>
       <Router>
