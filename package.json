@@ -12,7 +12,6 @@
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\""
     }, 
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
