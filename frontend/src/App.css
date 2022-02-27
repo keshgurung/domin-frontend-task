@@ -396,6 +396,8 @@ h3 {
   top: 0;
   width: 100%;
   overflow: hidden;
+  z-index: 99;
+  opacity: 1;
 }
 
 .nav p {
@@ -420,14 +422,14 @@ h3 {
     margin-bottom: 0.9em;
     box-shadow: 8px 0 8px rgb(187, 185, 185);
   }
-}
-.dropdown {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 25%;
-}
+  .dropdown {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25%;
+  }
 
-.click-button button {
-  width: 20%;
-  margin-left: 40%;
+  .click-button button {
+    width: 20%;
+    margin-left: 40%;
+  }
 }

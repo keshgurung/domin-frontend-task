@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const Login = () => {
   const location = useLocation()
-  console.log(location.pathname)
+
   const navigate = useNavigate()
   return (
     <div className='login'>
