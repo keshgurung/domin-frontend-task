@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import SingleProduct from './pages/SingleProduct'
 import Configure from './components/Configure'
 import Info from './components/Info'
+
 // import { UserData } from './helper/Data'
 // import { useState } from 'react'
 

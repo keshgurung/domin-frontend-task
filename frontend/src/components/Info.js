@@ -1,35 +1,7 @@
 import { useState } from 'react'
 import { Chart as Chartjs } from 'chart.js/auto'
 import { Line } from 'react-chartjs-2'
-
-const data = {
-  labels: ['1 day', '1 week', '1 mo', '3 mo'],
-  datasets: [
-    {
-      label: 'Spool position',
-      data: [12, 19, 0, 5, 2, 3],
-      borderWidth: 1,
-    },
-    {
-      label: 'Temperature',
-      data: [4, 0, 15, 6, 11, 4],
-      borderWidth: 1,
-    },
-    {
-      label: 'Pressure',
-      data: [9, 13, 4, 0, 5, 13],
-      borderWidth: 1,
-    },
-  ],
-}
-const options = {
-  scales: {
-    y: {
-      beginAtZero: true,
-    },
-  },
-  // backgroundColor: '#00aec7',
-}
+import { data } from '../helper/data'
 
 const Info = () => {
   const [buttonColor, setButtonColor] = useState('#a3e4ee')
@@ -80,7 +52,7 @@ const Info = () => {
         <div className='line-chart'>
           <div className='check-box'></div>
           <div className='chart'>
-            <Line data={data} options={options} />
+            <Line data={data} options={data.options} />
           </div>
           <div className='time'>
             <button

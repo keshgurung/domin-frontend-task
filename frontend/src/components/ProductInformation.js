@@ -1,7 +1,5 @@
 import { BsArrowLeftCircle } from 'react-icons/bs'
 import { useNavigate, Link, Outlet } from 'react-router-dom'
-import Info from '../components/Info'
-
 import Footer from './Footer'
 
 const ProductInformation = ({ image, uid, type, location, status }) => {
