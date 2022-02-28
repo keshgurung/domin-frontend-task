@@ -2,8 +2,6 @@
 
 Hosted version --> https://domin-task.netlify.app
 
-Github repository --> https://github.com/keshgurung/domin-frontend-task
-
 ## Required technologies:
 
 - VSCode
@@ -11,7 +9,7 @@ Github repository --> https://github.com/keshgurung/domin-frontend-task
 
 ## Instructions to use:
 
-- Goto the Github repository and click on the code tab to copy the web URL to clone the project or simply copy the following URL --> https://github.com/keshgurung/domin-frontend-task.git
+- In Github repository and click on the code tab to copy the web URL to clone the project or simply copy the following URL --> https://github.com/keshgurung/domin-frontend-task.git
 
 - Open terminal ( for mac user: press cmd + space and type terminal and click on it).
 
