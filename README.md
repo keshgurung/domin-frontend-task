@@ -27,4 +27,4 @@ Hosted version --> https://domin-task.netlify.app
 
 - Type `yarn start` and press enter to start the server.
 
-- You can view the project on your webbrowser. To view as a mobile browser, right click on the browser and select inspect, click on mobile tab to view how the project will look on mobile devices.
+- You can view the project on your webbrowser `localhost:3000` . To view as a mobile browser, right click on the browser and select inspect, click on mobile tab to view how the project will look on mobile devices.
