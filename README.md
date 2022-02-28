@@ -23,7 +23,7 @@ Hosted version --> https://domin-task.netlify.app
 
 - In VSCode, in the menu section, goto terminal and click on new terminal. A new terminal will open at the bottom of the page.
 
-- In the terminal, type cd frontend and press enter and type `yarn`
+- In the terminal, goto froentend folder `cd frontend` and type `yarn` and enter.
 
 - Type `yarn start` and press enter to start the server.
 
